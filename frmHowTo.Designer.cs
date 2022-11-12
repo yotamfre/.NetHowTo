@@ -1,0 +1,80 @@
+﻿namespace HowTo
+{
+    partial class frmHowTo
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnOpenSecondForm = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Blue;
+            this.label1.Location = new System.Drawing.Point(34, 26);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(281, 63);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "How To ...";
+            // 
+            // btnOpenSecondForm
+            // 
+            this.btnOpenSecondForm.BackColor = System.Drawing.Color.Yellow;
+            this.btnOpenSecondForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOpenSecondForm.ForeColor = System.Drawing.Color.Purple;
+            this.btnOpenSecondForm.Location = new System.Drawing.Point(12, 105);
+            this.btnOpenSecondForm.Name = "btnOpenSecondForm";
+            this.btnOpenSecondForm.Size = new System.Drawing.Size(318, 82);
+            this.btnOpenSecondForm.TabIndex = 1;
+            this.btnOpenSecondForm.Text = "Close How To Form and Open Second Form";
+            this.btnOpenSecondForm.UseVisualStyleBackColor = false;
+            this.btnOpenSecondForm.Click += new System.EventHandler(this.btnOpenSecondForm_Click);
+            // 
+            // frmHowTo
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(342, 409);
+            this.Controls.Add(this.btnOpenSecondForm);
+            this.Controls.Add(this.label1);
+            this.Name = "frmHowTo";
+            this.Text = "How To ...";
+            this.Load += new System.EventHandler(this.frmHowTo_Load);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnOpenSecondForm;
+    }
+}
+
