@@ -46,6 +46,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Events\UpdateCustomersEventArgs.cs" />
+    <Compile Include="frmAddCustomers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddCustomers.Designer.cs">
+      <DependentUpon>frmAddCustomers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCustomers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCustomers.Designer.cs">
+      <DependentUpon>frmCustomers.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmHowTo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,8 +71,16 @@
     <Compile Include="frmSecondForm.Designer.cs">
       <DependentUpon>frmSecondForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\CustomersModel.cs" />
+    <Compile Include="Models\TitlesModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAddCustomers.resx">
+      <DependentUpon>frmAddCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCustomers.resx">
+      <DependentUpon>frmCustomers.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmHowTo.resx">
       <DependentUpon>frmHowTo.cs</DependentUpon>
     </EmbeddedResource>
@@ -90,7 +111,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Dbase\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

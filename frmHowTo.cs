@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SetForm1PropertyFromForm2;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -45,6 +46,12 @@ namespace HowTo
         {
             //RUNs a NEW application with the desired form
             Application.Run(new frmSecondForm());
+        }
+
+        private void btnDelegates_Click(object sender, EventArgs e)
+        {
+            frmCustomers customers = new frmCustomers();
+            customers.Show();
         }
     }
 }

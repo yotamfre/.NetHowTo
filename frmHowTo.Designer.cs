@@ -30,6 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.btnOpenSecondForm = new System.Windows.Forms.Button();
+            this.btnDelegates = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -37,7 +38,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Blue;
-            this.label1.Location = new System.Drawing.Point(34, 26);
+            this.label1.Location = new System.Drawing.Point(236, 24);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(281, 63);
             this.label1.TabIndex = 0;
@@ -46,21 +47,35 @@
             // btnOpenSecondForm
             // 
             this.btnOpenSecondForm.BackColor = System.Drawing.Color.Yellow;
-            this.btnOpenSecondForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOpenSecondForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOpenSecondForm.ForeColor = System.Drawing.Color.Purple;
             this.btnOpenSecondForm.Location = new System.Drawing.Point(12, 105);
             this.btnOpenSecondForm.Name = "btnOpenSecondForm";
-            this.btnOpenSecondForm.Size = new System.Drawing.Size(318, 82);
+            this.btnOpenSecondForm.Size = new System.Drawing.Size(318, 91);
             this.btnOpenSecondForm.TabIndex = 1;
-            this.btnOpenSecondForm.Text = "Close How To Form and Open Second Form";
+            this.btnOpenSecondForm.Text = "Close How To Close This Form and Open Second Form";
             this.btnOpenSecondForm.UseVisualStyleBackColor = false;
             this.btnOpenSecondForm.Click += new System.EventHandler(this.btnOpenSecondForm_Click);
+            // 
+            // btnDelegates
+            // 
+            this.btnDelegates.BackColor = System.Drawing.Color.Yellow;
+            this.btnDelegates.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelegates.ForeColor = System.Drawing.Color.Purple;
+            this.btnDelegates.Location = new System.Drawing.Point(354, 105);
+            this.btnDelegates.Name = "btnDelegates";
+            this.btnDelegates.Size = new System.Drawing.Size(318, 91);
+            this.btnDelegates.TabIndex = 2;
+            this.btnDelegates.Text = "How to Pass Data from Second Form Back To Previous Form";
+            this.btnDelegates.UseVisualStyleBackColor = false;
+            this.btnDelegates.Click += new System.EventHandler(this.btnDelegates_Click);
             // 
             // frmHowTo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(342, 409);
+            this.ClientSize = new System.Drawing.Size(687, 409);
+            this.Controls.Add(this.btnDelegates);
             this.Controls.Add(this.btnOpenSecondForm);
             this.Controls.Add(this.label1);
             this.Name = "frmHowTo";
@@ -75,6 +90,7 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnOpenSecondForm;
+        private System.Windows.Forms.Button btnDelegates;
     }
 }
 
