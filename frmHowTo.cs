@@ -34,13 +34,16 @@ namespace HowTo
 
         private void btnOpenSecondForm_Click(object sender, EventArgs e)
         {
+            //Close current form
             this.Close();
+            //Create a thread to RUN a NEW application with the desired form
             Thread t = new Thread(new ThreadStart(ThreadFormTwo));
             t.Start();
         }
 
         private void ThreadFormTwo()
         {
+            //RUNs a NEW application with the desired form
             Application.Run(new frmSecondForm());
         }
     }
