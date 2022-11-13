@@ -20,11 +20,20 @@ namespace SetForm1PropertyFromForm2
         private void Form1_Load(object sender, EventArgs e)
         {
             this.CenterToScreen();
+            this.SetControls();
 
             //Get list of customers - mimic getting data from database
             Customers = PersonsModel.GetCustomers();
             
             this.PopulateCustomers();
+        }
+
+        private void SetControls()
+        {
+            //Form
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
         }
 
         private void PopulateCustomers()
@@ -37,7 +46,7 @@ namespace SetForm1PropertyFromForm2
             this.lstCustomers.DataSource = customers;
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
+        private void btnAdd_Click(object sender, EventArgs e)
         {
             //Create new instance of "Add Customers" form
             frmAddCustomers frm2 = new frmAddCustomers();
@@ -65,6 +74,11 @@ namespace SetForm1PropertyFromForm2
 
             //Populate the listbox with new changes to Customers
             this.PopulateCustomers();
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -59,5 +59,11 @@ namespace HowTo
             frmImportTextFileData importtexttiledata = new frmImportTextFileData();
             importtexttiledata.Show();
         }
+
+        private void btnExport_Click(object sender, EventArgs e)
+        {
+            frmExportData export = new frmExportData();
+            export.Show();
+        }
     }
 }

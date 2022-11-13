@@ -37,7 +37,7 @@ namespace SetForm1PropertyFromForm2
             // btnOpen
             // 
             this.btnOpen.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOpen.Location = new System.Drawing.Point(129, 193);
+            this.btnOpen.Location = new System.Drawing.Point(12, 160);
             this.btnOpen.Name = "btnOpen";
             this.btnOpen.Size = new System.Drawing.Size(233, 90);
             this.btnOpen.TabIndex = 1;
@@ -48,7 +48,7 @@ namespace SetForm1PropertyFromForm2
             // txtCustomer
             // 
             this.txtCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCustomer.Location = new System.Drawing.Point(130, 46);
+            this.txtCustomer.Location = new System.Drawing.Point(13, 13);
             this.txtCustomer.MaxLength = 25;
             this.txtCustomer.Name = "txtCustomer";
             this.txtCustomer.Size = new System.Drawing.Size(232, 30);
@@ -57,7 +57,7 @@ namespace SetForm1PropertyFromForm2
             // btnAdd
             // 
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.Location = new System.Drawing.Point(129, 92);
+            this.btnAdd.Location = new System.Drawing.Point(12, 59);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(233, 41);
             this.btnAdd.TabIndex = 3;
@@ -69,13 +69,13 @@ namespace SetForm1PropertyFromForm2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(501, 306);
+            this.ClientSize = new System.Drawing.Size(261, 261);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.txtCustomer);
             this.Controls.Add(this.btnOpen);
             this.Name = "frmAddCustomers";
             this.Text = "Add Customer";
-            this.Load += new System.EventHandler(this.Form2_Load);
+            this.Load += new System.EventHandler(this.frmAddCustomers_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

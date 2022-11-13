@@ -31,7 +31,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnOpenSecondForm = new System.Windows.Forms.Button();
             this.btnDelegates = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnExport = new System.Windows.Forms.Button();
             this.btnImportTextFile = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -72,17 +72,18 @@
             this.btnDelegates.UseVisualStyleBackColor = false;
             this.btnDelegates.Click += new System.EventHandler(this.btnDelegates_Click);
             // 
-            // button1
+            // btnExport
             // 
-            this.button1.BackColor = System.Drawing.Color.Yellow;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Purple;
-            this.button1.Location = new System.Drawing.Point(355, 219);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(318, 91);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Export Data To Text File";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnExport.BackColor = System.Drawing.Color.Yellow;
+            this.btnExport.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExport.ForeColor = System.Drawing.Color.Purple;
+            this.btnExport.Location = new System.Drawing.Point(355, 219);
+            this.btnExport.Name = "btnExport";
+            this.btnExport.Size = new System.Drawing.Size(318, 91);
+            this.btnExport.TabIndex = 4;
+            this.btnExport.Text = "Export Data To Text File";
+            this.btnExport.UseVisualStyleBackColor = false;
+            this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
             // 
             // btnImportTextFile
             // 
@@ -102,7 +103,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(687, 409);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnExport);
             this.Controls.Add(this.btnImportTextFile);
             this.Controls.Add(this.btnDelegates);
             this.Controls.Add(this.btnOpenSecondForm);
@@ -120,7 +121,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnOpenSecondForm;
         private System.Windows.Forms.Button btnDelegates;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnExport;
         private System.Windows.Forms.Button btnImportTextFile;
     }
 }

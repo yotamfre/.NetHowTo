@@ -45,5 +45,10 @@ namespace HowTo.Processes
 
             return customers;
         }
+
+        public static void ExportData(PersonsModel person)
+        {
+
+        }
     }
 }

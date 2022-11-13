@@ -44,7 +44,7 @@ namespace SetForm1PropertyFromForm2
             this.btnAddCustomers.TabIndex = 2;
             this.btnAddCustomers.Text = "Open Add Customers";
             this.btnAddCustomers.UseVisualStyleBackColor = false;
-            this.btnAddCustomers.Click += new System.EventHandler(this.btnClose_Click);
+            this.btnAddCustomers.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // lstCustomers
             // 
@@ -66,6 +66,7 @@ namespace SetForm1PropertyFromForm2
             this.btnClose.TabIndex = 4;
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // frmCustomers
             // 
