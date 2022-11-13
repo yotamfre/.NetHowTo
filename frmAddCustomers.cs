@@ -1,5 +1,5 @@
-﻿using SetForm1PropertyFromForm2.Events;
-using SetForm1PropertyFromForm2.Models;
+﻿using HowTo.Events;
+using HowTo.Models;
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;

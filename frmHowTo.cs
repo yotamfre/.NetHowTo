@@ -53,5 +53,11 @@ namespace HowTo
             frmCustomers customers = new frmCustomers();
             customers.Show();
         }
+
+        private void btnImportTextFile_Click(object sender, EventArgs e)
+        {
+            frmImportTextFileData importtexttiledata = new frmImportTextFileData();
+            importtexttiledata.Show();
+        }
     }
 }

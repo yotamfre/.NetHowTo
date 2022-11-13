@@ -36,13 +36,14 @@ namespace SetForm1PropertyFromForm2
             // 
             // btnAddCustomers
             // 
+            this.btnAddCustomers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnAddCustomers.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddCustomers.Location = new System.Drawing.Point(27, 218);
             this.btnAddCustomers.Name = "btnAddCustomers";
             this.btnAddCustomers.Size = new System.Drawing.Size(233, 50);
             this.btnAddCustomers.TabIndex = 2;
             this.btnAddCustomers.Text = "Open Add Customers";
-            this.btnAddCustomers.UseVisualStyleBackColor = true;
+            this.btnAddCustomers.UseVisualStyleBackColor = false;
             this.btnAddCustomers.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // lstCustomers
@@ -57,13 +58,14 @@ namespace SetForm1PropertyFromForm2
             // 
             // btnClose
             // 
+            this.btnClose.BackColor = System.Drawing.Color.Lime;
             this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose.Location = new System.Drawing.Point(27, 276);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(233, 50);
             this.btnClose.TabIndex = 4;
             this.btnClose.Text = "Close";
-            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.UseVisualStyleBackColor = false;
             // 
             // frmCustomers
             // 

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SetForm1PropertyFromForm2.Models
+namespace HowTo.Models
 {
     public static class TitlesModel
     {
