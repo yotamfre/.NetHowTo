@@ -10,7 +10,7 @@ namespace SetForm1PropertyFromForm2
     public partial class frmCustomers : Form
     {
         //Create new instance of CustomersModel
-        List<CustomersModel> Customers = new List<CustomersModel>();
+        List<PersonsModel> Customers = new List<PersonsModel>();
 
         public frmCustomers()
         {
@@ -22,7 +22,7 @@ namespace SetForm1PropertyFromForm2
             this.CenterToScreen();
 
             //Get list of customers - mimic getting data from database
-            Customers = CustomersModel.GetCustomers();
+            Customers = PersonsModel.GetCustomers();
             
             this.PopulateCustomers();
         }
@@ -31,7 +31,7 @@ namespace SetForm1PropertyFromForm2
         {
             //Use LINQ to get customers from the CustomersModel
             var customers = (from c in Customers
-                             select c.Customer).ToList();
+                             select c.Person).ToList();
 
             //Set the DataSource of the listbox to the customers collection
             this.lstCustomers.DataSource = customers;

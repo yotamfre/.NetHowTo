@@ -17,7 +17,7 @@ namespace SetForm1PropertyFromForm2
         public event CustomersHandler UpdateCustomers;
 
         //ArrayList - Updated by Form1
-        public List<CustomersModel> Customers;
+        public List<PersonsModel> Customers;
 
         public frmAddCustomers()
         {
@@ -54,9 +54,9 @@ namespace SetForm1PropertyFromForm2
         private void AddCustomer()
         {
             //User is adding a customer. Add it to the Customer ArrayList
-            Customers.Add(new CustomersModel()
+            Customers.Add(new PersonsModel()
             {
-                Customer = this.txtCustomer.Text.Trim()
+                Person = this.txtCustomer.Text.Trim()
             });
 
             //Success

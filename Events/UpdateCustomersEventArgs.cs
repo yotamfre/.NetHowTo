@@ -10,14 +10,14 @@ namespace HowTo.Events
     public class UpdateCustomersEventArgs : EventArgs
     {
         //ArrayList
-        private List<CustomersModel> customers = new List<CustomersModel>();
+        private List<PersonsModel> customers = new List<PersonsModel>();
         
-        public UpdateCustomersEventArgs(List<CustomersModel> c)
+        public UpdateCustomersEventArgs(List<PersonsModel> c)
         {
             customers = c;
         }
 
-        public List<CustomersModel> GetCustomers
+        public List<PersonsModel> GetCustomers
         {
             get
             {

@@ -81,7 +81,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(318, 91);
             this.button1.TabIndex = 4;
-            this.button1.Text = "In Process";
+            this.button1.Text = "Export Data To Text File";
             this.button1.UseVisualStyleBackColor = false;
             // 
             // btnImportTextFile

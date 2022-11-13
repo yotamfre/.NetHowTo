@@ -59,6 +59,12 @@
     <Compile Include="frmCustomers.Designer.cs">
       <DependentUpon>frmCustomers.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmExportToTextFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExportToTextFile.Designer.cs">
+      <DependentUpon>frmExportToTextFile.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmHowTo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,7 +84,7 @@
       <DependentUpon>frmSecondForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\CurrentPath.cs" />
-    <Compile Include="Models\CustomersModel.cs" />
+    <Compile Include="Models\PersonsModel.cs" />
     <Compile Include="Models\TitlesModel.cs" />
     <Compile Include="Processes\TexFiletInputOutput.cs" />
     <Compile Include="Program.cs" />
@@ -88,6 +94,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmCustomers.resx">
       <DependentUpon>frmCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExportToTextFile.resx">
+      <DependentUpon>frmExportToTextFile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmHowTo.resx">
       <DependentUpon>frmHowTo.cs</DependentUpon>

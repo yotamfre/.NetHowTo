@@ -7,11 +7,11 @@ namespace HowTo.Processes
 {
     public static class TexFiletInputOutput
     {
-        private static List<CustomersModel> customers;
+        private static List<PersonsModel> customers;
 
-        public static List<CustomersModel> GetGuardiansData(string file)
+        public static List<PersonsModel> GetGuardiansData(string file)
         {
-            customers = new List<CustomersModel>();
+            customers = new List<PersonsModel>();
             string line = string.Empty;
 
             try
@@ -26,9 +26,9 @@ namespace HowTo.Processes
                         while ((line = rdr.ReadLine()) != null)
                         {
                             //Add data to the Customers Model
-                            customers.Add(new CustomersModel()
+                            customers.Add(new PersonsModel()
                             {
-                                Customer = line
+                                Person = line
                             });
                         }
                     }

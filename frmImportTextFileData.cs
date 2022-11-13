@@ -9,7 +9,7 @@ namespace HowTo
 {
     public partial class frmImportTextFileData : Form
     {
-        List<CustomersModel> characters = new List<CustomersModel>();
+        List<PersonsModel> characters = new List<PersonsModel>();
         string selectedfile = string.Empty;
 
         public frmImportTextFileData()
@@ -68,7 +68,7 @@ namespace HowTo
 
             //Use LINQ to get customers from the CustomersModel
             var theguardians = (from c in characters
-                             select c.Customer).ToList();
+                             select c.Person).ToList();
 
             //Set the DataSource of the listbox to the customers collection
             this.lstCharacters.DataSource = theguardians;
