@@ -1,0 +1,9 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <ExportAsXML>
+    <DataValue>test123</DataValue>
+  </ExportAsXML>
+  <ExportAsXML>
+    <DataValue>testabc</DataValue>
+  </ExportAsXML>
+</DocumentElement>

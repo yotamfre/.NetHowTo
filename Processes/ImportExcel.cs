@@ -2,7 +2,7 @@
 using System.Data;
 using System.IO;
 
-namespace WindowsFormsApp1
+namespace HowTo.Processes
 {
     public static class ImportExcel
     {

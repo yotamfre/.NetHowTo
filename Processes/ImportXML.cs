@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Data;
 
-namespace WindowsFormsApp1.Services
+namespace HowTo.Processes
 {
     public class ImportXML
     {

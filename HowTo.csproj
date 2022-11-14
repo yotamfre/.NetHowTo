@@ -103,6 +103,7 @@
     <Compile Include="Models\CurrentPath.cs" />
     <Compile Include="Models\PersonsModel.cs" />
     <Compile Include="Models\TitlesModel.cs" />
+    <Compile Include="Processes\ConvertObjects.cs" />
     <Compile Include="Processes\ExportExcel.cs" />
     <Compile Include="Processes\ExportXML.cs" />
     <Compile Include="Processes\ImportExcel.cs" />

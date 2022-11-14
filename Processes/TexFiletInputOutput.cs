@@ -47,7 +47,7 @@ namespace HowTo.Processes
             return customers;
         }
 
-        public static void ExportDataToTextFile(List<PersonsModel> data, string file)
+        public static bool ExportDataToTextFile(List<PersonsModel> data, string file)
         {
             try
             {
@@ -68,6 +68,8 @@ namespace HowTo.Processes
 
                 throw ex;
             }
+
+            return true;
         }
     }
 }

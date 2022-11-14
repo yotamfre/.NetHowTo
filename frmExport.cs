@@ -2,12 +2,6 @@
 using HowTo.Processes;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace HowTo
@@ -71,24 +65,31 @@ namespace HowTo
 
         private void PerformExport()
         {
+            bool success = false;
+
             string file = this.txtLocation.Text.Trim() + "\\" + this.txtFileName.Text.Trim();
 
             if (this.rbText.Checked)
             {
                 file = file + ".txt";
-                TexFiletInputOutput.ExportDataToTextFile(Data, file);
+                success = TexFiletInputOutput.ExportDataToTextFile(Data, file);
             }
             else if (this.rbXML.Checked)
             {
                 file = file + ".xml";
+                success = ExportXML.ExportXMLData(Data, file);
             }
             else if (this.rbExcel.Checked)
             {
                 file = file + ".xlsx";
             }
 
-            MessageBox.Show(this, "Export of " + file + " was successful.", TitlesModel.MessageBoxTitle,
-                            MessageBoxButtons.OK, MessageBoxIcon.Information);
+            if (success)
+                MessageBox.Show(this, "Export of " + file + " was SUCCESSFUL.", TitlesModel.MessageBoxTitle,
+                                MessageBoxButtons.OK, MessageBoxIcon.Information);
+            else
+                MessageBox.Show(this, "Export of " + file + " was UNSUCCESSFUL!", TitlesModel.MessageBoxTitle,
+                                MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void btnClose_Click(object sender, EventArgs e)
