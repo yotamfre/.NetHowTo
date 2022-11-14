@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Text;
 
 namespace HowTo.Processes
 {
@@ -46,9 +47,27 @@ namespace HowTo.Processes
             return customers;
         }
 
-        public static void ExportData(PersonsModel person)
+        public static void ExportDataToTextFile(List<PersonsModel> data, string file)
         {
+            try
+            {
+                //We want to 
+                FileStream stream = new FileStream(file, FileMode.OpenOrCreate, FileAccess.Write);
 
+                using (StreamWriter writer = new StreamWriter(stream, Encoding.UTF8))
+                {
+                    foreach (var d in data)
+                    {
+                        writer.WriteLine(d.Person.ToString());
+
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
         }
     }
 }
