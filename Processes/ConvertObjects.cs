@@ -12,7 +12,7 @@ namespace HowTo.Processes
     {
         public static DataTable ConvertListToDataTable(List<PersonsModel> list)
         {
-            string tablename = "ExportAsXML";
+            string tablename = "Export";
 
             //New DataTable
             DataTable table = new DataTable(tablename);

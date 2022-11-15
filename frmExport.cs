@@ -1,4 +1,5 @@
-﻿using HowTo.Models;
+﻿using DocumentFormat.OpenXml.Drawing.Charts;
+using HowTo.Models;
 using HowTo.Processes;
 using System;
 using System.Collections.Generic;
@@ -66,7 +67,7 @@ namespace HowTo
         private void PerformExport()
         {
             bool success = false;
-
+            
             string file = this.txtLocation.Text.Trim() + "\\" + this.txtFileName.Text.Trim();
 
             if (this.rbText.Checked)
@@ -77,11 +78,12 @@ namespace HowTo
             else if (this.rbXML.Checked)
             {
                 file = file + ".xml";
-                success = ExportXML.ExportXMLData(Data, file);
+                success = ExportXML.ExportXMLData(ConvertObjects.ConvertListToDataTable(Data), file);
             }
             else if (this.rbExcel.Checked)
             {
                 file = file + ".xlsx";
+                success = ExportExcel.ExportExcelData(ConvertObjects.ConvertListToDataTable(Data), file);
             }
 
             if (success)
